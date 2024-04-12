@@ -22,53 +22,53 @@
     </head>
     <body>
         <header>
-            <h1>Fakebook</h1>
-            <div class="links">
-                <li>Friends</li>
-                <li>Pages</li>
-                <li>Groups</li>
-                <li>My ads</li>
-                <li>Settings</li>
-            </div>
-            <div class="profile" id="profile">
-                <img src="./assets/media/my avatar new.jpg" class="profile-pic">
-            <div class="profile-info"></div>
-             <div class="id"></div>
-             <div class="name"></div>
-             <div class="username"></div>
-             <div class="pages"></div>
-             <div class="Groups"></div>
-             <div class="can-monatize"></div>
-            </div>
-            </div>
+
         </header>
-        <main>
-          <div class="container">
-            <section id="post">
-                <input type="text" class="message" placeholder="what's new today?">
-                <div class="image-post">
-                    <div class="image-post"> 
-                    <input type="file" accept=".jpg, .jpeg, .png, .ico" id="imageInput" style="display: none; ">
-                    <label for="imageInput" id="imageInputLabel">    
-                    <img src="./assets/media/pictures-16.png" id="images">
-                    </label>
-                    <div class="alert"></div>
-                    <div id="previewContainer"></div>
-                    <button id="button">Post</button>
-                </div>
-            </section>
-            <section class="user-post">
-                <div class="flex space-between">
-                    <div class="flex gap-10">
-                        <img class="images">
-                        <p></p>
+        <div class="index-container flex gap-40">
+            <aside>
+                <div class="index-background-image">
+                    <div class="flex bg-logo">
+                        <div class="index-logo"></div>
+                        <h1>Link</h1>
                     </div>
-                    <p></p>
                 </div>
-                <div></div>
-            </section>
-          </div>
-        </main>
-        <script src="./assets/script/index.js" type="module"></script>
+            </aside>
+            <aside class="form-section">
+                <h1>
+                    Welcome to NGLink
+                </h1>
+                <p>
+                    Explore job linkup opportunities for immigrants 
+                    on ngLink, a platform designed to connect you with 
+                    tailored job openings.
+                </p>
+                <form action="login.php" method="POST">
+                    <div class="input-group flex">
+                        <label for="email">
+                            <i class="fa-solid fa-envelope"></i>   
+                        </label>               
+                        <input type="email" id="email" class="email-input" name="email" placeholder=""> 
+                    </div>
+                    <div class="input-group flex">
+                        <label for="password">
+                            <i class="fa-solid fa-key"></i>
+                        </label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="flex space-between">
+                        <div>
+                            <input type="checkbox" name="option" value="option1">
+                            <span class="custom-radio"></span> Remember me
+                        </div>
+                        <a href="#">Forget password?</a>
+                    </div>
+                    <div class="flex gap-10">
+                        <button type="submit" class="btn">Login</button>
+                        <button type="submit" class="btn">Create profile</button>
+                    </div>
+
+                </form>
+            </aside>
+        </div>
     </body>
 </html>
