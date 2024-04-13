@@ -222,6 +222,15 @@ li {
     margin: 5px;
 }
 
+.nav-profile-picture {
+    background: url(../img/profile-image.jpg) center/ cover no-repeat;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 40px;
+
+}
+
 /* Main Page */
 
 /* Profile Section */
@@ -246,7 +255,7 @@ section {
 }
 
 #profile {
-    width: 300px;
+    width: calc(25% - 20px);
     h2, h3, p {
         text-align: center;
     }
@@ -276,8 +285,61 @@ section {
         width: 200px;
     }
 }
+/* Post Section */
+
+#post {
+    width: calc(50% - 20px);
+}
+
+.create-post {
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+.post-column {
+    margin: 10px 0px;
+    padding: 10px;
+    border: 1px solid #fff;
+}
+
+.post-message {
+    width: 100%;
+    margin: 5px;
+}
+
+.post-profile {
+    width: 40px;
+    height: 40px;
+    background-color: #0056b3;
+    border-radius: 100px;
+    img{ 
+        border-radius: 100px;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+}
+
+.post-info {
+    i + i {
+        margin-left: 20px;
+    }
+}
+
+.post-option {
+    text-align: center;
+}
+
+.media-post-container {
+    width: 100%;
+    height: 250px;
+    background-color: #0056b3;
+}
 
 /* People Section */
+
+#people {
+}
 
 .people-title {
     height: 40px;
@@ -292,15 +354,19 @@ section {
     position: relative;
 }
 
-.people-01-photo {
-    background: url(../img/profile-image.jpg) center/ cover no-repeat;
+.people-photo {
     width: 60px;
     height: 60px;
-    border-radius: 100px;
     position: absolute;
     top: 50%;
     left: 15%;
     transform: translate(-50%, -50%);
+    img{ 
+        border-radius: 100px;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
 }
 
 .people-info {
