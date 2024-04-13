@@ -1,0 +1,12 @@
+{
+  "name": "ng-link",
+  "version": "1.0.0",
+  "description": "Keep in touch with people you know",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
