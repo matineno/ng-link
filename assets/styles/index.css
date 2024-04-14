@@ -137,6 +137,13 @@ a {
     }
 }
 
+.wrong-login{
+  color: rgb(255, 0, 0);
+  position: absolute;
+  top: 120px;
+  font-size: 15px;
+}
+
 .input-group {
     border: 0.5px solid #fff;
     margin-bottom: 20px;
