@@ -17,7 +17,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lobster&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,700&family=Sansita&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&family=Tenor+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
         <link rel="stylesheet" href="./assets/styles/index.css" media="all">
-        <script src="./assets/script/index.js" type="module" defer></script>
+        <script src="./assets/script/home.js" type="module" defer></script>
     </head>
     <body>
         <header class="flex space-around">
@@ -58,14 +58,6 @@
                 </li>
             </ul>
             <div class="nav-profile-picture"></div>
-            <div style="display: none;">
-             <div class="id"></div>
-             <div class="name"></div>
-             <div class="username"></div>
-             <div class="pages"></div>
-             <div class="Groups"></div>
-             <div class="can-monatize"></div>
-            </div>
         </header>
         <main>
           <div class="container flex space-between gap-10">
@@ -74,7 +66,7 @@
                     <div class="profile-picture-container">
                         <div class="profile-picture"></div>
                     </div>
-                    <h2 id="profile-name">Martins Adogamhe</h2>
+                    <h3 id="profile-name">Martins Adogamhe</h3>
                     <p id="job-title">Software Developer</p>
                     <p id="website">http://www.matineno.org</p>
                 </div>
@@ -90,7 +82,7 @@
                 </div>
                 <div class="upgrade-column">
                     <div><p>Free Access exclusive tools and insights</p></div>
-                    <button type="submit" class="btn">UPGRADE TO PREMIUM</button>
+                    <div class="flex center"><button type="submit" class="upgrade-button">UPGRADE TO PREMIUM</button></div>
                 </div>
             </section>
             <section id="post" >
@@ -111,13 +103,13 @@
                                 Video
                             </div>
                         </div>
-                        <i class="fa-solid fa-paper-plane"></i>
+                        <i class="fa-solid fa-paper-plane blue"></i>
                     </div>
                 </div>
                 <div class="post-column">
                     <div class="flex space-between">
                         <div class="flex gap-10">
-                            <div class="post-profile"></div>
+                            <div class="post-profile post-user-01"></div>
                             <div>
                                 <h3>Dominic Abarham</h3>
                                 <p>Senior Talent Acquisition researcher</p>
@@ -139,13 +131,13 @@
                             poetry guide your soul. ✨ #LindenWhispers #NatureInspiration #SerenityInLeaves 🍃
                         </p>
                     </div>
-                    <div class="media-post-container"></div>
+                    <div class="post-01"></div>
                     <div class="flex gap-10">
                         <div>
-                            <i class="fa-regular fa-heart"></i>32
+                            <i class="fa-solid fa-heart red"></i> 32
                         </div>
                         <div>
-                            <i class="fa-regular fa-comment"></i>12
+                            <i class="fa-regular fa-comment"></i> 12
                         </div>
                         <div>
                             <i class="fa-regular fa-share-from-square"></i>Share
@@ -155,119 +147,91 @@
                 <div class="post-column">
                     <div class="flex space-between">
                         <div class="flex gap-10">
-                            <div class="post-profile"></div>
+                            <div class="post-profile post-user-02"></div>
                             <div>
-                                <h3>Dominic Abarham</h3>
-                                <p>Senior Talent Acquisition researcher</p>
+                                <h3>Maya Miller</h3>
+                                <p>Marketing Specialist</p>
                             </div>
                         </div>
                         <div class="post-option">
                             <i class="fa-solid fa-ellipsis"></i>
-                            <p>10min ago</p>
+                            <p>25min ago</p>
                         </div>
                     </div>
                     <div class="post-info">
                         <p>
-                            Feeling the breeze in the Linden trees today, 
-                            reminiscing about moments lost in whispers of leaves. 
-                            🌿 Sometimes, it's in the quiet rustle that we find our 
-                            loudest thoughts. Let the Linden's gentle sway be a reminder 
-                            of life's graceful dance, each leaf a story waiting to unfold. 
-                            Take a moment, breathe in the serenity, and let nature's 
-                            poetry guide your soul. ✨ #LindenWhispers #NatureInspiration #SerenityInLeaves 🍃
+                            I'm thrilled to announce that I've accepted a new 
+                            role as a Marketing Specialist at Realbax Company! 🌟 
+                            It's a fantastic opportunity to leverage my skills in 
+                            digital marketing, content creation, and strategic planning 
+                            to drive impactful campaigns and contribute to the company's 
+                            growth trajectory.<br>
+                            I'm looking forward to collaborating with a talented team, exploring 
+                            innovative marketing strategies, and making a meaningful impact in the 
+                            industry. Thank you to everyone who supported me throughout the interview
+                             process and believed in my potential.<br>
+                            Cheers to new beginnings, exciting challenges, and endless possibilities! 🚀 <br>
+                            #NewJob #MarketingProfessional #Excited
                         </p>
                     </div>
                     <div class="media-post-container"></div>
                     <div class="flex gap-10">
                         <div>
-                            <i class="fa-regular fa-heart"></i>32
+                            <i class="fa-solid fa-heart red"></i> 105
                         </div>
                         <div>
-                            <i class="fa-regular fa-comment"></i>12
+                            <i class="fa-regular fa-comment"></i> 45
                         </div>
                         <div>
                             <i class="fa-regular fa-share-from-square"></i>Share
                         </div>
-                    </div><div class="post-column">
-                        <div class="flex space-between">
-                            <div class="flex gap-10">
-                                <div class="post-profile"></div>
-                                <div>
-                                    <h3>Dominic Abarham</h3>
-                                    <p>Senior Talent Acquisition researcher</p>
-                                </div>
-                            </div>
-                            <div class="post-option">
-                                <i class="fa-solid fa-ellipsis"></i>
-                                <p>10min ago</p>
-                            </div>
-                        </div>
-                        <div class="post-info">
-                            <p>
-                                Feeling the breeze in the Linden trees today, 
-                                reminiscing about moments lost in whispers of leaves. 
-                                🌿 Sometimes, it's in the quiet rustle that we find our 
-                                loudest thoughts. Let the Linden's gentle sway be a reminder 
-                                of life's graceful dance, each leaf a story waiting to unfold. 
-                                Take a moment, breathe in the serenity, and let nature's 
-                                poetry guide your soul. ✨ #LindenWhispers #NatureInspiration #SerenityInLeaves 🍃
-                            </p>
-                        </div>
-                        <div class="media-post-container"></div>
+                    </div>
+                </div>
+                <div class="post-column">
+                    <div class="flex space-between">
                         <div class="flex gap-10">
+                            <div class="post-profile post-user-03"></div>
                             <div>
-                                <i class="fa-regular fa-heart"></i>32
+                                <h3>Blake Wilson</h3>
+                                <p>Senior Project Manager</p>
                             </div>
-                            <div>
-                                <i class="fa-regular fa-comment"></i>12
-                            </div>
-                            <div>
-                                <i class="fa-regular fa-share-from-square"></i>Share
-                            </div>
+                        </div>
+                        <div class="post-option">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            <p>50min ago</p>
                         </div>
                     </div>
-                    <div class="post-column">
-                        <div class="flex space-between">
-                            <div class="flex gap-10">
-                                <div class="post-profile"></div>
-                                <div>
-                                    <h3>Dominic Abarham</h3>
-                                    <p>Senior Talent Acquisition researcher</p>
-                                </div>
-                            </div>
-                            <div class="post-option">
-                                <i class="fa-solid fa-ellipsis"></i>
-                                <p>10min ago</p>
-                            </div>
+                    <div class="post-info">
+                        <p>
+                            Exciting News! 🌟
+                            I'm thrilled to share that I've been promoted to 
+                            Senior Project Manager at ABC Enterprises. It's been 
+                            an incredible journey filled with challenges and learning 
+                            opportunities, and I'm grateful for the support of my 
+                            colleagues and mentors who have been instrumental in my growth.
+                            I look forward to leading our team towards even greater success, 
+                            delivering exceptional projects, and driving innovation within our 
+                            organization. Thank you to everyone who has been a part of this journey!
+                            #CareerGrowth #Leadership #ProjectManagement
+                        </p>
+                    </div>
+                    <div class="media-post-container"></div>
+                    <div class="flex gap-10">
+                        <div>
+                            <i class="fa-solid fa-heart red"></i> 203
                         </div>
-                        <div class="post-info">
-                            <p>
-                                Feeling the breeze in the Linden trees today, 
-                                reminiscing about moments lost in whispers of leaves. 
-                                🌿 Sometimes, it's in the quiet rustle that we find our 
-                                loudest thoughts. Let the Linden's gentle sway be a reminder 
-                                of life's graceful dance, each leaf a story waiting to unfold. 
-                                Take a moment, breathe in the serenity, and let nature's 
-                                poetry guide your soul. ✨ #LindenWhispers #NatureInspiration #SerenityInLeaves 🍃
-                            </p>
+                        <div>
+                            <i class="fa-regular fa-comment"></i> 56
                         </div>
-                        <div class="media-post-container"></div>
-                        <div class="flex gap-10">
-                            <div>
-                                <i class="fa-regular fa-heart"></i>32
-                            </div>
-                            <div>
-                                <i class="fa-regular fa-comment"></i>12
-                            </div>
-                            <div>
-                                <i class="fa-regular fa-share-from-square"></i>Share
-                            </div>
+                        <div>
+                            <i class="fa-regular fa-share-from-square"></i>Share
                         </div>
+                    </div>
                 </div>
             </section>
             <section id="people">
                 <div class="people-title">
-                    <h2>People you may know</h2>
+                    <h3>People you may know</h3>
                 </div>
                 <div id="userContainer"></div>
             </section>
