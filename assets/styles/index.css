@@ -1,9 +1,12 @@
 :root {
-    --background-color-one: rgb(255, 255, 255);
+    --background-color-one: rgb(246, 247, 249);
     --background-color-two: rgb(0, 0, 0);
     --dialog-background-color: rgba(0, 0, 0, 0.877);
-    --font-color-one: rgb(240, 235, 235);
-    --font-color-two: rgb(28, 26, 26);
+    --font-color-one: rgb(34, 31, 31);
+    --font-color-one-tras: rgba(28, 26, 26, 0.566);
+    --font-color-two: rgb(240, 235, 235);
+    --header-background: rgb(255, 255, 255);
+    --section-background: rgb(255, 255, 255);
     --footer-background: rgba(251, 251, 251, 0);
     --background-mask: rgba(0, 0, 0, 0.7);
     --action-button-color: #551985;
@@ -18,12 +21,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
-body {
-    background-color: #38444b;
-}
-
 
 /* Auxilary classes */
   
@@ -81,9 +78,9 @@ body {
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #242424;
-    color: #fff;
+    background-color: var(--background-color-one);
+    font-family: sans-serif, Arial, Helvetica;
+    color: var(--font-color-one);
     margin: 0;
     padding: 0;
     position: relative;
@@ -99,7 +96,7 @@ aside {
     background: url("../img/index-image.jpg") center /cover no-repeat;
     height: 100%;
     width: 100%;
-    color: #fff;
+    color: var(--font-color-two);
 }
 
 .bg-logo {
@@ -116,6 +113,23 @@ aside {
     width: 500px;
 }
 
+.form-title {
+    padding: 0px 20px;
+    p{
+        color: var(--font-color-one-tras);
+        font-weight: 800;
+        font-size: 15px;
+    }
+}
+
+.red {
+    color: rgb(255, 0, 21)
+}
+
+.blue {
+    color: #007bff;
+}
+
 .form-section {
     padding: 20px;
     height: 500px;
@@ -125,12 +139,12 @@ aside {
 
 form {
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
     
 }
 
 a {
-    color: #fff;
+    color: var(--font-color-one-tras);
     text-decoration: none;
     &:hover {
         text-decoration: underline;
@@ -145,9 +159,11 @@ a {
 }
 
 .input-group {
-    border: 0.5px solid #fff;
+    border: 0.5px solid var(--font-color-one-tras);
     margin-bottom: 20px;
-    padding: 10px
+    padding: 10px;
+    box-shadow: -5px -5px 20px rgba(255, 255, 255, 0.5),
+              5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .input-group label {
@@ -160,14 +176,20 @@ a {
     border-radius: 3px;
     border: 1px solid #cccccc00;
     background-color: #ffffff00;
-    color: #fff;
+    color: var(--font-color-one);
 }
 
 .input-group input:focus {
     outline: none;
 }
 
-.btn {
+.highlight-p {
+    color: var(--font-color-one-tras);
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.login-btn {
     display: block;
     width: 50%;
     padding: 10px;
@@ -178,13 +200,53 @@ a {
     color: #fff;
     font-size: 16px;
     cursor: pointer;
+    box-shadow: -5px -5px 20px rgba(255, 255, 255, 0.5),
+              5px 5px 10px rgba(0, 0, 0, 0.2);
+    &:hover {
+        background-color: #0056b3;
+    }
 }
 
-.btn:hover {
-    background-color: #0056b3;
+.profile-btn {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #007bff;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #007bff;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: -5px -5px 20px rgba(255, 255, 255, 0.5),
+              5px 5px 10px rgba(0, 0, 0, 0.2);
+    &:hover {
+        background-color: #0056b3;
+        color: #fff;
+    }
+
 }
 
-.btn + .btn {
+.upgrade-button {
+    display: block;
+    width: 150px;
+    height: 50px;
+    margin: 20px 0px;
+    border: 1px solid #007bff;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #007bff;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: -5px -5px 20px rgba(255, 255, 255, 0.5),
+              5px 5px 10px rgba(0, 0, 0, 0.2);
+    &:hover {
+        background-color: #0056b3;
+        color: #fff;
+    }
+}
+
+.button + .button {
     gap: 10px;
 }
 
@@ -195,7 +257,7 @@ a {
 header {
     height: 50px;
     width: 100%;
-    background-color: #0056b3;
+    background-color: var(--header-background);
 }
 
 .header-logo {
@@ -210,6 +272,7 @@ header {
     margin-top: -10px;
     border: 0.5px solid #fff; 
     i {
+        color: var(--font-color-one-tras);
         margin: 2px;
     }
     input {
@@ -221,16 +284,21 @@ header {
     padding: 8px;
     border-radius: 3px;
     background-color: #ffffff00;
-    color: #fff;
 }
 
 li {
     text-align: center;
     margin: 5px;
+    font-weight: 200;
+    font-size: 15px;
+    i {
+        color: var(--font-color-one-tras);
+        font-size: 20px;
+    }
 }
 
 .nav-profile-picture {
-    background: url(.../img/profile-image.jpg) center/ cover no-repeat;
+    background: url(../img/profile-image.jpg) center/ cover no-repeat;
     width: 40px;
     height: 40px;
     margin: 5px;
@@ -257,8 +325,14 @@ li {
 }
 
 section {
-    border: 2px solid #fff;
+    background-color: var(--background-color-one);
+    height: 100%;
+    border: 2px solid var(--background-color-one);
     margin: 20px 0px;
+    border-radius: 5px;
+    h2 {
+        font-size: 20px;
+    }
 }
 
 #profile {
@@ -269,20 +343,25 @@ section {
 }
 
 .profile-column {
+    background-color: var(--section-background);
     border: 0.5px solid #fff;
-    margin: 5px;
+    margin: 2px;
 }
 
 .section-column {
-    width: calc(50% - 10px);
+    background-color: var(--section-background);
+    width: 50%;
     border: 0.5px solid #fff;
-    margin: 5px;
+    margin: 2px;
+    p {
+        color: var(--font-color-one-tras);
+    }
 }
 
 .upgrade-column {
+    background-color: var(--section-background);
     border: 0.5px solid #fff;
-    margin: 5px;
-    display: flex;
+    margin: 2px;
     justify-content: center;
     div {
         width: 100%;
@@ -299,11 +378,13 @@ section {
 }
 
 .create-post {
+    background-color: var(--section-background);
     border: 1px solid #fff;
     padding: 10px;
 }
 
 .post-column {
+    background-color: var(--section-background);
     margin: 10px 0px;
     padding: 10px;
     border: 1px solid #fff;
@@ -319,12 +400,25 @@ section {
     height: 40px;
     background-color: #0056b3;
     border-radius: 100px;
+    margin: 5px;
     img{ 
         border-radius: 100px;
         max-width: 100%;
         max-height: 100%;
         object-fit: contain;
     }
+}
+
+.post-user-01 {
+    background: url(../img/post-user-01.jpg) center/ cover no-repeat;
+}
+
+.post-user-02 {
+    background: url(../img/post-user-02.jpg) center/ cover no-repeat;
+}
+
+.post-user-03 {
+    background: url(../img/post-user-03.jpg) center/ cover no-repeat;
 }
 
 .post-info {
@@ -337,10 +431,10 @@ section {
     text-align: center;
 }
 
-.media-post-container {
+.post-01 {
     width: 100%;
     height: 250px;
-    background-color: #0056b3;
+    background: url(../img/post-01.jpg) center/ cover no-repeat;
 }
 
 /* People Section */
@@ -349,15 +443,17 @@ section {
 }
 
 .people-title {
+    background-color: var(--section-background);
     height: 40px;
-    border: 0.5px solid #fff;
-    margin: 5px;
+    width: 250px;
+    margin: 2px;
+    padding: 5px 10px;
 }
 
 .add-people-column {
+    background-color: var(--section-background);
     height: 80px;
-    border: 0.5px solid #fff;
-    margin: 5px;
+    border: 2px solid var(--background-color-one);
     position: relative;
 }
 
@@ -382,6 +478,9 @@ section {
     top: 50%;
     left: 70%;
     transform: translate(-50%, -50%);
+    p {
+        color: var(--font-color-one-tras);
+    }
 
 }
 
