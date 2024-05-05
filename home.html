@@ -20,7 +20,7 @@
         <script src="./assets/script/home.js" type="module" defer></script>
     </head>
     <body>
-        <header class="flex space-around">
+        <header class="flex space-between">
             <div class="flex bg-logo gap-10">
                 <div class="header-logo"></div>
                 <div class="search-bar flex">
@@ -30,11 +30,13 @@
                     <input type="text" id="search-bar" name="search-bar" placeholder="Search"required>
                 </div>
             </div>
-            <ul class="links flex gap-5">
+            <ul class="links flex center gap-5">
                 <li>
-                    <div>
-                        <i class="fa-solid fa-house"></i>
-                    </div>Home
+                    <div class="home-nav-select">
+                        <div>
+                            <i class="fa-solid fa-house"></i>
+                        </div>Home
+                    </div>
                 </li>
                 <li>
                     <div>
@@ -57,7 +59,9 @@
                     </div>Notification
                 </li>
             </ul>
-            <div class="nav-profile-picture"></div>
+            <div class="profile-container">
+                <div class="nav-profile-picture"></div>
+            </div>
         </header>
         <main>
           <div class="container flex space-between gap-10">
@@ -237,6 +241,28 @@
             </section>
           </div>
         </main>
+        <footer>
+            <section class="center">
+                <p><span>Questions? Call 1-204-834-7734</span></p>
+                <div class="flex center gap-10">
+                    <div class="flex gap-10">
+                        <a href="#">About</a>
+                        <a href="#">Accessibility</a>
+                        <a href="#">Help Center</a>
+                    </div>
+                    <div class="flex gap-10">
+                        <a href="#">Privacy & Terms</a>
+                        <a href="#">Ad Choice</a>
+                    </div>
+                    <div class="flex gap-10">
+                        <a href="#">Advertising</a>
+                        <a href="#">Business Service</a>
+                        <a href="#">More</a>
+                    </div>
+                </div>
+            <p>NGLink Corporation &copy; 2024</p>
+            </section>
+        </footer>
         <script src="./assets/script/index.js" type="module"></script>
     </body>
 </html>
